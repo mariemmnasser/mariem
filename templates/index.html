@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css')}}">
+</head>
+<body style="background-color:pink;">
+    <nav style='margin-top:50 px ; margin-left:45px'>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/a">Add quote</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">help</a>
+        </li>
+    </ul>
+</nav>
+<br><br><br>
+<div class="container theme-showcasse" , role="main">
+
+<div  style="background-color:rebeccapurple ; color: white;" class="jumbotron">
+<h1>Favoite Quote</h1>
+
+</div>
+</div>
+<br><br>
+{% for r in result %}
+<div class="container theme-showcasse" , role="main">
+<div  style="background-color:violet ; color: white;" >
+<h1>{{r.author}}</h1>
+
+</div>
+</div>
+<br>
+
+<div class="container theme-showcasse" , role="main">
+  <div  style="background-color:crimson ; color: white; size: 50px;" >
+    <h1>{{r.quote}}</h1>
+  </div>
+</div>
+<br><br>
+
+{%endfor%}
+    
+</body>
+</html>

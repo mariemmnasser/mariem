@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Israa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css')}}">
+</head>
+
+<body style="background-image: url(https://images.pexels.com/photos/1235398/pexels-photo-1235398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+background-repeat:no-repeat;
+background-color: #cccccc;background-size: cover;">
+<br><br>
+<center>
+<h1 style="color:mediumpurple; font-family: Cambria;font-size: 100 px;"><i>Form</i></h1>
+</center>
+<div class="container">
+  <form method="POST" action="/a">
+    <div class="form-group">
+    <label for="author" class="form-label">Author</label>
+    <input type="text" class="form-control" name="author" placeholder="Example input placeholder">
+      </div>
+
+   <div class="mb-3">
+    <label for="quote" class="form-label">Quote</label>
+    <input type="text" class="form-control" name="quote" placeholder="Another input placeholder">
+    </div>
+  
+   <center><button type="submit" class="btn btn-lg btn-primary " > submit</button></center>
+  </form>
+</div>
+
+
+
+</body>
+</html>
